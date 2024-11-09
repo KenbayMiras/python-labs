@@ -4,6 +4,7 @@ user_input = input("enter something:")
 output_list = list(user_input.lower())
 
 print(output_list)
+
 #task1.2
 input_list = [('p', 2), ('u', 1), ('l', 1), (' ', 1), ('f', 1), ('i', 2), ('c', 1), ('t', 1), ('o', 1), ('n', 1)]
 
@@ -47,15 +48,14 @@ student = {
     'lab': [78.20, 77.20],
     'test': [78, 77]
 }
+print(student['assignment'][3])
 
 total_assignments = 4
 total_labs = 2
 total_tests = 2
 
 submitted_count = (
-    len(student['assignment']) +
-    len(student['lab']) +
-    len(student['test'])
+    len(student['assignment']) + len(student['lab']) +len(student['test'])
 )
 
 submission_check = {student['name']: submitted_count}
